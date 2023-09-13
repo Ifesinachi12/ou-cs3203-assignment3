@@ -1,4 +1,4 @@
-//a program that computes basic operations of an array of numbers
+//a java program that computes basic operations of an array of numbers
 
 public class Operations {
 
@@ -20,5 +20,18 @@ public class Operations {
     
 
 
+        //multp_list method: multiplies all numbers in a given array and returns the total
+        public int multp_list(int[] array){
+
+            int result = 1; //initialize result
+
+            for (int i = 0; i < array.length; i++){
+
+                result *= array[i]; // multiplies all entries of the array
+            }
+
+            return result;
+        }
+        //end
 
 }
