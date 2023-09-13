@@ -1,5 +1,6 @@
 //a java program that computes basic operations of an array of numbers
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Operations {
@@ -38,6 +39,26 @@ public class Operations {
 
 
 
+
+        //takes in a given array, reverses the array ans returns the newly reversed array
+        public static int[] reverse_array(int[] array){
+
+            int[] rev_array = new int[array.length]; // create a new array for the reverse
+            int j = 0; // create index for reverse array
+
+            for (int i = array.length - 1; i >= 0; i--){
+
+                rev_array[j] = array[i]; // reverse the array
+                j++; // increment j (the index of the reverse array)
+            }
+
+            return rev_array; //return the reversed array
+        } 
+        //end
+
+
+
+
         // main method to test the methods
         public static void main(String[] args){
 
@@ -56,6 +77,7 @@ public class Operations {
 
             int sum_result = add_list(array); // call add_list method
             int product_result = multp_list(array); // call the multp_list method
+            int[] rev_array = reverse_array(array); // call reverse method
 
             //print sum result
             System.out.print("Addition result: ");
@@ -65,7 +87,16 @@ public class Operations {
             System.out.print("Product Result: ");
             System.out.println(product_result);
 
+            //print reversed array
+            System.out.print("Reversed Array Result: ");
+            System.out.println(Arrays.toString(rev_array));
+
+            //print original array for comparison
+            System.out.print("For Comparison, Original array: ");
+            System.out.println(Arrays.toString(array));
+
         }
+        //end
 
 }
 
