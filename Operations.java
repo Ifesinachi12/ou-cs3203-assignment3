@@ -95,6 +95,10 @@ public class Operations {
             System.out.print("For Comparison, Original array: ");
             System.out.println(Arrays.toString(array));
 
+
+            System.out.print("Thanks for playing! ");
+            
+
         }
         //end
 
