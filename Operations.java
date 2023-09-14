@@ -87,6 +87,8 @@ public class Operations {
             System.out.print("Product Result: ");
             System.out.println(product_result);
 
+            //Making a comment for part 10
+
             //print reversed array
             System.out.print("Reversed Array Result: ");
             System.out.println(Arrays.toString(rev_array));
