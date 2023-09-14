@@ -89,6 +89,7 @@ public class Operations {
 
             //Making a comment for part 10
 
+<<<<<<< HEAD
             //print reversed array
             System.out.print("Reversed Array Result: ");
             System.out.println(Arrays.toString(rev_array));
@@ -101,6 +102,8 @@ public class Operations {
             System.out.print("Thanks for playing! ");
             
 
+=======
+>>>>>>> d3d38011cc8c0e3d630ac18e429779f7cc745fb1
         }
         //end
 
